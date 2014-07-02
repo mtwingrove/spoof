@@ -1,0 +1,63 @@
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+	<title>Spoof</title>
+	<style>
+		body{
+			text-align:center;
+		}
+		#tForm{
+			max-width:375px;
+			margin: 0px auto;
+		}
+	</style>
+</head>
+<body>
+<br/>
+<form name="mail" id="tForm" class="form-horizontal well" method="POST" autocomplete="off" action="mail.php">
+	<h1>You've Got Mail!</h1>
+	<div class="control-group">
+		<label class="control-label" for="tTo">To:</label>
+		<div class="controls">
+			<input type="text" size="26" name="tTo">
+		</div>
+	</div>	
+	
+	<div class="control-group">
+		<label class="control-label" for="tFrom">From:</label>
+		<div class="controls">
+			<input type="text" size="26" name="tFrom">
+		</div>
+	</div>	
+	
+	<div class="control-group">
+		<label class="control-label" for="tSubject">Subject:</label>
+		<div class="controls">
+			<input type="text" size="26" name="tSubject">
+		</div>
+	</div>	
+	
+	<div class="control-group">
+		<label class="control-label" for="tBody">Body:</label>
+		<div class="controls">
+			<textarea name="tBody" rows="2" cols="26"></textarea>
+		</div>
+	</div>	
+	
+	<div class="control-group">
+		<label class="control-label" for="tPass">Password:</label>
+		<div class="controls">
+			<input type="password" size="26" name="tPass">
+		</div>
+	</div>	
+			
+		<br/>
+	<button class="btn btn-primary" type="submit" value="Submit">Submit</button>
+
+</form>
+
+</body>
+</html>

@@ -13,12 +13,13 @@ $email_message = $_POST['tBody'];
 $email_from = $_POST['tFrom'];
 $pass = $_POST['tPass'];
 
+//Set the password
 $currPass = 'password';
  
  if ($pass == $currPass){
     // create email headers
     $headers = 'From: '.$email_from."\r\n".
-               'Reply-To: ndr@test.com'."\r\n" .
+               'Reply-To: dnr@test.com'."\r\n" .
                'MIME-Version: 1.0\r\n' .
                'Content-type:text/html;charset=iso-8859-1' . '\r\n';
                'X-Mailer: PHP/' . phpversion().'\r\n';

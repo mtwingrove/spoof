@@ -19,16 +19,16 @@ $currPass = 'password';
     // create email headers
     $headers = 'From: '.$email_from."\r\n".
                'Reply-To: ndr@test.com'."\r\n" .
-               	'MIME-Version: 1.0\r\n' .
-               "Content-type:text/html;charset=iso-8859-1" . "\r\n";
-               'X-Mailer: PHP/' . phpversion()."\r\n";
+               'MIME-Version: 1.0\r\n' .
+               'Content-type:text/html;charset=iso-8859-1' . '\r\n';
+               'X-Mailer: PHP/' . phpversion().'\r\n';
      $result = mail($email_to, $email_subject, $email_message, $headers); 
  
      if ($result) echo 'Sent!';
      if (!$result) echo 'Mail did not send.';
  }
  else{
-		echo "Wrong password.";
+		echo 'Wrong password.';
 	}
 ?>
 </html>
